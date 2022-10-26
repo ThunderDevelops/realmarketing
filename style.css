@@ -1,37 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  /* box-sizing: border-box; */
+  font-family: 'Roboto';
+}
+
 body{
     background: fixed;
     background-color: aliceblue;
-    margin: 0%;
+    margin: 0;
+    scroll-behavior: smooth;
+    /* background-image: url('images/photo-1553877522-43269d4ea984.webp'); */
+}
+
+.element{
+    background-image: url("/images/stock\ image\ city.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: black;
+    font-size: 32px;
+    color: #fff;
+    box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .element1{
     background-color: black;
+    color: white;
 }
 
 .navbar{
+    z-index: 1000000000000000;
     overflow: hidden;
-    background-color: black;
-    position: fixed;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
     top: 0;
     width: 100%;
+    box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+  height: 20px;
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background .2s ease;
+}
+
+.navbar a.active {
+  box-shadow: 0 4px 0 #000 inset;
+}
   
-  /* Change background on mouse-over */
-  .navbar a:hover {
-    background: #ddd;
-    color: black;
-  }
-  
-  /* Main content */
-  .main {
-    margin-top: 30px; /* Add a top margin to avoid content overlay */
-  }
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  margin-top: 30px;
+}
+
+.text {
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.ting {
+  width: fit-content;
+}
+
+.ting h3 {
+  overflow: hidden;
+  width: min-content;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: typing 1.5s steps(15, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+#top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  outline: none;
+  background: white;
+  color: black;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  border-radius: 50%;
+  z-index: 19287318927389172398;
+  transition: background .4s ease;
+  cursor: pointer;
+}
+
+#top:hover {
+  background: lightgray;
+}
+
+footer {
+  width: 100%;
+  background: #333;
+}
+
+.topElement{
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  color: white;
+  background-size: 100% 100%;
+  font-size: 32px;
+
+}
+
+.secondElement{
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  background-position-x: right;
+  padding-left: 30px;
+  text-align: left;
+  width: fit-content;
+}

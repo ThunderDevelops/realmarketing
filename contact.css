@@ -1,0 +1,49 @@
+html, body {
+    height: calc(100% - 40px);
+}
+
+.påst{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.melding{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.subject{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.knapp{
+    background-color: lightgreen;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.knapp:hover{
+    background-color: green;
+
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+#card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

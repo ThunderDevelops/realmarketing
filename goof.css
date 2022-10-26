@@ -1,0 +1,30 @@
+* {
+    animation: animate .5s forwards;
+    /* ,balls 2s forwards infinite; */
+}
+
+@keyframes animate {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes balls {
+    0% {
+        transform: rotate(3600deg) scale(0);
+        filter: hue-rotate(20deg);
+    }
+    80% {
+        transform: rotate(0) scale(1);
+        filter: hue-rotate(10020deg);
+    }
+    100% {
+        transform: rotate(120deg) scale(0);
+        filter: hue-rotate(20deg);
+    }
+}
