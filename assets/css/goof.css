@@ -1,6 +1,5 @@
 * {
-    animation: animate .5s forwards;
-    /* ,balls 2s forwards infinite; */
+    animation: animate .5s forwards/*, balls 2s forwards infinite*/;
 }
 
 @keyframes animate {

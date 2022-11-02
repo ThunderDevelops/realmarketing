@@ -1,0 +1,30 @@
+footer {
+    height: 10em;
+    background: rgb(57, 57, 63);
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.socials a {
+    display: grid;
+    place-items: center;
+    padding: 15px;
+    background: #fff;
+    color: #222;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background .2s ease;
+}
+
+.socials a:hover {
+    background: rgb(215, 205, 205);
+}

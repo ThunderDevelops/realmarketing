@@ -24,7 +24,7 @@ body{
 }
 
 .element1{
-    background-color: black;
+    background-color: rgb(187, 187, 187);
     color: white;
 }
 
@@ -46,7 +46,7 @@ body{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  transition: background .2s ease;
+  transition: .2s ease;
 }
 
 .navbar a.active {
@@ -138,4 +138,21 @@ footer {
   padding-right: 30px;
   text-align: left;
   width: fit-content;
+}
+
+
+
+.element1 {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background-image: radial-gradient(circle at 8px 8px, #181818 2px, rgba(0,0,0,0) 0);
+  background-size: 25px 25px;
+  animation: move 5s linear infinite;
+  z-index: 100;
+  overflow: hidden;
+}
+
+@keyframes move {
+  from { background-position: calc(25px * -5) calc(25px * -2); }
 }
