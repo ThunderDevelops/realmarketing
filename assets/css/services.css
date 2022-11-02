@@ -1,0 +1,11 @@
+#container {
+    background: rgb(71, 140, 200);
+    border-color: rgb(48, 0, 0);
+    border-radius: 5px;
+    background-position: center;
+}
+
+.card1{
+    height: 50px;
+    width: 100px;
+}

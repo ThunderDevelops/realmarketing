@@ -20,24 +20,42 @@
   </div>
 
   <div id="container">
-    <div id="card">
-      <h1>Contact Us</h1>
-      <!-- modify this form HTML and place wherever you want your form -->
-      <form action="https://formspree.io/f/xvoywrrg" method="POST">
-        <label class="påst">
-          Email: <br>
-          <input type="email" name="email">
-        </label>
-        <br> <br>
-        <label class="melding">
-          Message: <br>
-          <textarea name="message"></textarea>
-        </label>
-
-        <!-- your other form fields go here --> <br> <br>
-        <button class="knapp" type="submit">Send</button>
-      </form></body>
+    <div id="content">
+      <div>
+        <div id="card">
+          <h1>Contact Us</h1>
+          <!-- modify this form HTML and place wherever you want your form -->
+          <form action="https://formspree.io/f/xvoywrrg" method="POST">
+            <label class="påst">Email:</label>
+            <br>
+            <input type="email" name="email">
+            <br> <br>
+            <label class="melding">Message:</label>
+            <br>
+            <textarea name="message"></textarea>
+    
+            <!-- your other form fields go here --> <br> <br>
+            <button class="knapp" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+      <div id="cube">
+        <div class="cube">
+          <span style="--i:0;--clr:#f1efa3"></span>
+          <span style="--i:1;--clr:#eeeb8c"></span>
+          <span style="--i:2;--clr:#f1efa3"></span>
+          <span style="--i:3;--clr:#eeeb8c"></span>
+          <span style="--clr:#f8f7d1" class="top"></span>
+          <span style="--clr:#ccc972" class="bottom"></span>
+        </div>
+      </div>
     </div>
   </div>
-</body>    
+</body>
 </html>
+
+<script>
+  function toggleObama() {
+    document.querySelectorAll('.cube').forEach(cube => cube.classList.toggle('obama'))
+  }
+</script>

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 * {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   font-family: 'Roboto';
 }
 
@@ -28,8 +28,12 @@ body{
     color: white;
 }
 
+.navbar *, .navbar {
+  box-sizing: content-box;
+}
+
 .navbar{
-    z-index: 1000000000000000;
+  z-index: 1000000000000000;
     overflow: hidden;
     background-color: rgb(255, 255, 255);
     position: sticky;
