@@ -46,7 +46,7 @@
           <span style="--i:2;--clr:#f1efa3"></span>
           <span style="--i:3;--clr:#eeeb8c"></span>
           <span style="--clr:#f8f7d1" class="top"></span>
-          <span style="--clr:#ccc972" class="bottom"></span>
+          <!-- <span style="--clr:#ccc972" class="bottom"></span> -->
         </div>
       </div>
     </div>
@@ -55,7 +55,27 @@
 </html>
 
 <script>
+  document.querySelectorAll('.cube span').forEach(span => span.onclick = () => toggleObama())
+  let obama = false
+  const audio = new Audio('assets/sus/biden.mp3')
+  audio.loop = true
+  const audio2 = new Audio('assets/sus/biden-dementia.mp3')
+  audio2.loop = true
+
   function toggleObama() {
     document.querySelectorAll('.cube').forEach(cube => cube.classList.toggle('obama'))
+    obama = !obama
+    if (obama) {
+      if (Math.random() >= 0.1) {
+        audio.play()
+      } else {
+        audio2.play()
+      }
+    } else {
+      audio.pause()
+      audio2.pause()
+      audio.currentTime = 0
+      audio2.currentTime = 0
+    }
   }
 </script>

@@ -104,9 +104,6 @@ body {
     0% {
         transform: rotateX(-20deg) rotateY(360deg);
     }
-    50% {
-
-    }
     100% {
         transform: rotateX(-20deg) rotateY(0deg);
     }
@@ -121,7 +118,7 @@ body {
     transform-style: preserve-3d;
 }
 
-.cube.obama span {
+.cube.obama span, .cube span.obama {
     background: url('/images/obama.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -143,3 +140,7 @@ body {
     background: rgba(0,0,0,0.5);
     filter: blur(50px);
 }
+
+/* .cube:hover {
+    animation-play-state: paused;
+} */
