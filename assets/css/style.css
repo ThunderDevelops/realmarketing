@@ -124,7 +124,8 @@ footer {
 }
 
 .topElement{
-  background-image: url("/images/team\ 2.webp") ;
+  /* background-image: url("/images/team\ 2.webp") ; */
+  background-image: url("/images/team\ 2.webp");
   background-color: rgb(0, 0, 0);
   background-repeat: no-repeat;
   color: rgb(0, 0, 0);

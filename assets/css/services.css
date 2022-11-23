@@ -4,24 +4,22 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background-color: #fff;
-    width: 300px;
+    width: 500px;
     height: 100%;
     padding: 10px;
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    position: relative;
   }
   
   /* Add some padding inside the card container */
   .container {
-    padding: 2px 16px;
+    position: relative;
   }
 
   #container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    /* align-items: center; */
-    gap: 20px;
-    width: 80%;
+    margin: 0 20px;
   }
 
   .text{
@@ -48,6 +46,8 @@
     border-radius: 4px;
     color: white;
     text-align: center;
+    position: absolute;
+    bottom: 0;
     transition: background .2s ease;
   }
 
