@@ -26,13 +26,13 @@
           <h1>Contact Us</h1>
           <!-- modify this form HTML and place wherever you want your form -->
           <form action="https://formspree.io/f/xvoywrrg" method="POST">
-            <label class="påst">Email:</label>
+            <label class="påst" for="email">Email:</label>
             <br>
-            <input type="email" name="email">
+            <input type="email" name="email" id="email">
             <br> <br>
-            <label class="melding">Message:</label>
+            <label class="melding" for="message">Message:</label>
             <br>
-            <textarea name="message"></textarea>
+            <textarea name="message" id="message" wrap="hard"></textarea>
     
             <!-- your other form fields go here --> <br> <br>
             <button class="knapp" type="submit">Send</button>
@@ -55,7 +55,6 @@
 </html>
 
 <script>
-  document.querySelectorAll('.cube span').forEach(span => span.onclick = () => toggleObama())
   let obama = false
   const audio = new Audio('assets/sus/biden.mp3')
   audio.loop = true
