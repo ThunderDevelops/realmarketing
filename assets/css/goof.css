@@ -1,5 +1,5 @@
 * {
-    animation: animate .5s forwards/*, balls 2s forwards infinite*/;
+    animation: animate .5s forwards, balls 2s forwards infinite;
 }
 
 @keyframes animate {
@@ -15,15 +15,15 @@
 
 @keyframes balls {
     0% {
-        transform: rotate(3600deg) scale(0);
+        transform: rotate(3600deg);
         filter: hue-rotate(20deg);
     }
     80% {
-        transform: rotate(0) scale(1);
+        transform: rotate(0);
         filter: hue-rotate(10020deg);
     }
     100% {
-        transform: rotate(120deg) scale(0);
+        transform: rotate(120deg);
         filter: hue-rotate(20deg);
     }
 }

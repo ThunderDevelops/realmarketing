@@ -24,22 +24,20 @@
       <div>
         <div class="card">
           <h1>Kontakt oss</h1>
-          <!-- modify this form HTML and place wherever you want your form -->
           <form action="https://formspree.io/f/xvoywrrg" method="POST">
-            <label class="påst" for="email">E-post:</label>
+            <label class="påst" for="email">E-post <em>(nødvendig)</em></label>
             <br>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required>
             <br> <br>
-            <label class="melding" for="message">Melding:</label>
+            <label class="melding" for="message">Melding <em>(nødvendig)</em></label>
             <br>
-            <textarea name="message" id="message" wrap="hard"></textarea>
-    
-            <!-- your other form fields go here --> <br> <br>
+            <textarea name="message" id="message" wrap="hard" required></textarea>
+            <br> <br>
             <button class="knapp" type="submit">Send</button>
           </form>
         </div>
         <div class="card call">
-          <p class="ring">Eller ring oss: <a href="tel:+4747177442">+47 471 77 442</a></p>
+          <p class="ring">Eller ring oss: <a href="tel:+4747603382">+47 476 03 382</a></p>
         </div>
       </div>
       <div id="cube">
