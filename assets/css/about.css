@@ -1,5 +1,6 @@
 html, body {
     height: calc(100% - 40px);
+    position: static;
 }
 
 .profiler {
@@ -44,4 +45,21 @@ html, body {
 .tekst h4 {
     font-weight: 300;
     transform: translateY(-20px);
+}
+
+.about {
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    background-position-x: right;
+    padding-left: 30px;
+    padding-right: 30px;
+    top: 0;
+    max-width: 35%;
+    text-align: left;
+    position: absolute;
+    right: 0;
+}
+
+#container {
+    position: relative;
 }
